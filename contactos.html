@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sabrina Coffees: café, historias y encuentros. Proyecto académico de diseño web.">
+    <title>Contacto | Sabrina Coffees</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/contacto.js" defer></script>
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="cabecera">
+        <a class="marca" href="index.html">Sabrina coffees</a>
+        <nav aria-label="Navegación principal">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="contactos.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido" class="contenedor">
+        <header class="intro"><h1>Contacto</h1><p>Consulta nuestros horarios o déjanos un mensaje.</p></header>
+        <div class="contacto">
+            <section aria-label="Información de contacto">
+                <!-- colspan y rowspan combinan celdas de la tabla. -->
+                <table>
+                    <caption>Información de contacto</caption>
+                    <thead><tr><th scope="col">Canal</th><th scope="col">Detalle</th></tr></thead>
+                    <tbody>
+                        <tr><th scope="row">Dirección referencial</th><td>Jirón Carabaya 552, Lima, Perú</td></tr>
+                        <tr><th scope="row" rowspan="2">Teléfonos de muestra</th><td>01 555 0100</td></tr>
+                        <tr><td>999 000 000</td></tr>
+                        <tr><th scope="row">Correo de muestra</th><td>hola@Sabrinacoffees.example</td></tr>
+                        <tr><th class="horario" colspan="2" scope="rowgroup">Horario de atención referencial</th></tr>
+                        <tr><th scope="row">Lunes a viernes</th><td>9:00 a. m. a 6:00 p. m.</td></tr>
+                        <tr><th scope="row">Sábado</th><td>9:00 a. m. a 1:00 p. m.</td></tr>
+                    </tbody>
+                </table>
+                <img class="foto-contacto" src="img/image-asset.jpeg" alt="Persona disfrutando una taza de café">
+                <p class="nota">Datos ilustrativos para la evaluación; no corresponden a un negocio verificado.</p>
+            </section>
+            <section aria-labelledby="titulo-formulario">
+                <form id="formulario-contacto">
+                    <h2 id="titulo-formulario">Escríbenos</h2>
+                    <p class="nota">Los campos con * son obligatorios. Formulario de demostración, sin envío real.</p>
+                    <label for="nombre">Nombre y apellido *</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Tu nombre completo" autocomplete="name" required maxlength="100">
+                    <label for="celular">Celular *</label>
+                    <input id="celular" name="celular" type="tel" placeholder="999 999 999" autocomplete="tel" pattern="[0-9+ ()-]{7,20}" title="Usa entre 7 y 20 caracteres: números, espacios, +, guiones o paréntesis." required>
+                    <label for="correo">Correo electrónico *</label>
+                    <input id="correo" name="correo" type="email" placeholder="nombre@ejemplo.com" autocomplete="email" required>
+                    <label for="ruc">RUC de la empresa (opcional)</label>
+                    <input id="ruc" name="ruc" type="text" inputmode="numeric" pattern="[0-9]{11}" maxlength="11" placeholder="11 dígitos" title="Ingresa exactamente 11 dígitos.">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos cómo podemos ayudarte" required maxlength="2000"></textarea>
+                    <button class="boton" type="submit">Enviar mensaje</button>
+                    <p id="estado" class="estado" role="status" aria-live="polite"></p>
+                    <noscript><p>Activa JavaScript para probar el formulario. No hay un servicio de envío conectado.</p></noscript>
+                </form>
+            </section>
+            <section class="mapa" aria-labelledby="titulo-mapa">
+                <h2 id="titulo-mapa">Un punto de encuentro en Lima</h2>
+                <iframe src="https://www.google.com/maps?q=Jiron+Carabaya+552+Lima+Peru&amp;output=embed" title="Mapa de la dirección referencial: Jirón Carabaya 552, Lima" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                <a href="https://www.google.com/maps?q=Jiron+Carabaya+552+Lima+Peru" target="_blank" rel="noopener noreferrer">Abrir dirección referencial en Google Maps</a>
+            </section>
+        </div>
+    </main>
+    <footer class="pie">
+        <p>© 2026 Sabrina Coffees · Proyecto académico</p>
+        <a href="contactos.html">Contacto</a>
+    </footer>
+</body>
+</html>

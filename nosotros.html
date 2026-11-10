@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sabrina Coffees: café, historias y encuentros. Proyecto académico de diseño web.">
+    <title>Nosotros | Sabrina Coffees</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="cabecera">
+        <a class="marca" href="index.html">Sabrina coffees</a>
+        <nav aria-label="Navegación principal">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html" aria-current="page">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido" class="contenedor">
+        <!-- Las cuatro regiones se ubican mediante grid-template-areas. -->
+        <div class="nosotros">
+            <header class="titulo-area"><h1>Nosotros</h1></header>
+            <section class="historia">
+                <h2>¿Quiénes somos?</h2>
+                <div class="columnas">
+                    <p>Sabrina Coffees es una cafetería pensada para compartir un café y conversar. Buscamos ofrecer un ambiente cómodo y una atención cercana.</p>
+                    <p>Nos gusta cuidar cada detalle y hacer que cada visita sea agradable. En esta web puedes conocer nuestra propuesta y comunicarte con nosotros.</p>
+                </div>
+                <img src="img/image-asset.jpeg" alt="Persona disfrutando una taza de café">
+            </section>
+            <aside class="publicidad" aria-labelledby="titulo-publicidad">
+                <img src="img/taza.png" alt="Taza de café presentada como bebida destacada">
+                <h2 id="titulo-publicidad">Tu pausa favorita.</h2>
+                <p>Haz espacio para una nueva historia. Nosotros ponemos la inspiración.</p>
+                <a href="contactos.html">Planea tu visita</a>
+            </aside>
+            <section class="cierre" aria-label="Nuestra filosofía"><p>Un café. Una conversación. Una nueva posibilidad.</p></section>
+        </div>
+    </main>
+    <footer class="pie">
+        <p>© 2026 Sabrina Coffees · Proyecto académico</p>
+        <a href="contactos.html">Contacto</a>
+    </footer>
+</body>
+</html>
